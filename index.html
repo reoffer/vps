@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>匿名VPS总代理 | Linux/Windows VPS · 网站/数据库托管 · USDT匿名支付</title>
+  <meta name="description" content="匿名VPS总代理：Linux VPS( Ubuntu/CentOS/Debian/Fedora )、Windows VPS(远程桌面)、网站托管、数据库托管。支持USDT匿名支付，热门国家/地区线路可选，7×24技术支持。">
+  <link rel="canonical" href="https://example.com/">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="云服务器总代理 | 匿名云VPS | 一站式云端服务">
+  <meta property="og:description" content="全球节点与高防，适配游戏、金融Web3、直播、点播等场景。支持迁移与客制化，立即咨询获取报价。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="theme-color" content="#0b57d0">
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f172a;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --brand: #0b57d0;
+      --brand-2: #22c55e;
+      --accent: #38bdf8;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --ring: rgba(56,189,248,.35);
+      --radius: 14px;
+      --shadow: 0 8px 30px rgba(2,6,23,.5);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, Noto Sans, "Noto Sans CJK SC", sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+
+    /* Header */
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(180%) blur(10px); background: rgba(15,23,42,.7); border-bottom: 1px solid rgba(148,163,184,.15); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .3px; }
+    .brand-badge { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: 0 6px 20px rgba(11,87,208,.55); }
+    .nav-links { display: none; gap: 20px; color: var(--muted); }
+    .cta { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px; background: linear-gradient(135deg, var(--brand), #1b72ff); color: #fff; border-radius: 10px; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 6px 24px rgba(11,87,208,.45); }
+    .cta.secondary { background: rgba(56,189,248,.1); color: #e0f2fe; border: 1px solid rgba(56,189,248,.25); box-shadow: inset 0 0 0 1px rgba(56,189,248,.15); }
+
+    /* Hero */
+    .hero { position: relative; padding: 72px 0 40px; overflow: hidden; }
+    .gradient-bg { position: absolute; inset: -20% -20% auto -20%; height: 360px; background: radial-gradient(80% 60% at 50% 40%, rgba(56,189,248,.25), transparent 60%), radial-gradient(70% 50% at 30% 20%, rgba(34,197,94,.18), transparent 60%); filter: blur(40px); opacity: .75; pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .4px; }
+    h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.12; margin: 10px 0 14px; }
+    .sub { color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: rgba(148,163,184,.12); color: #e5e7eb; border: 1px solid rgba(148,163,184,.2); font-size: 13px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+
+    /* Cards / Sections */
+    section { padding: 60px 0; }
+    .section-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+    .section-title h2 { margin: 0; font-size: clamp(20px, 3.5vw, 28px); }
+    .kicker { color: var(--muted); font-size: 14px; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+    .card { background: linear-gradient(180deg, rgba(15,23,42,.9), rgba(15,23,42,.7)); border: 1px solid rgba(148,163,184,.16); box-shadow: var(--shadow); border-radius: var(--radius); padding: 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .muted { color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+    .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; background: rgba(56,189,248,.12); color: #e0f2fe; border: 1px solid rgba(56,189,248,.25); font-size: 12px; }
+
+    /* Process */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: step; }
+    .step { position: relative; padding-left: 12px; }
+    .step::before { counter-increment: step; content: counter(step); position: absolute; left: -8px; top: -8px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--accent)); color: #fff; font-weight: 700; box-shadow: 0 6px 16px rgba(11,87,208,.45); }
+
+    /* CTA block */
+    .cta-block { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; align-items: center; padding: 18px; border-radius: var(--radius); background: linear-gradient(180deg, rgba(2,6,23,.9), rgba(2,6,23,.6)); border: 1px solid rgba(148,163,184,.16); box-shadow: var(--shadow); }
+
+    /* Footer */
+    footer { padding: 36px 0 48px; color: var(--muted); border-top: 1px solid rgba(148,163,184,.16); }
+    .foot-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 16px; }
+    .legal { font-size: 12px; color: #93c5fd; }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .hero-grid, .grid-3, .grid-2, .steps, .cta-block, .foot-grid { grid-template-columns: 1fr; }
+      .hero { padding: 56px 0 24px; }
+      .cta { height: 44px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "匿名云VPS总代理",
+    "url": "https://example.com/",
+    "logo": "https://example.com/logo.png",
+    "sameAs": [
+      "https://t.me/yourchannel",
+      "https://wa.me/yournumber"
+    ]
+  }
+  </script>
+<script src="static/utm.js" type="text/javascript"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="主导航">
+      <div class="brand"><span class="brand-badge" aria-hidden="true"></span>匿名云VPS总代理</div>
+      <nav class="nav-links" aria-label="快速链接">
+        <a href="#solutions">解决方案</a>
+        <a href="#features">核心优势</a>
+        <a href="#process">购买流程</a>
+        <a href="/click">联系我们</a>
+      </nav>
+      <a class="cta" href="/click" aria-label="立即咨询">立即咨询</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="gradient-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">匿名上云 · 快速开通 · 全球热门线路</div>
+          <h1>匿名VPS总代理｜Linux/Windows、网站与数据库托管，一站搞定</h1>
+          <p class="sub">专注匿名VPS代理：Linux VPS（Ubuntu、CentOS、Debian、Fedora等）、Windows VPS（远程桌面/RDP）、网站与数据库托管。支持USDT匿名支付与多地区热门线路，7×24技术支持与客制化方案。</p>
+                      <div class="badges" aria-label="卖点列表">
+              <span class="badge">USDT匿名支付</span>
+              <span class="badge">免费试用</span>
+              <span class="badge">无需信用卡</span>
+              <span class="badge">无需实名认证</span>
+              <span class="badge">热门国家线路</span>
+              <span class="badge">即开即用</span>
+            </div>
+          <div class="hero-cta">
+            <a class="cta" href="/click" aria-label="获取报价">获取报价</a>
+            <a class="cta secondary" href="/click" aria-label="联系我们">联系我们</a>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="pill" style="margin-bottom:10px;">为增长而生</div>
+            <h3 style="margin:0 0 6px;">为什么选择我们？</h3>
+            <p class="muted">作为云端服务总代理与匿名云VPS中间商，我们聚合多家一线云资源，提供更灵活的产品组合、更优惠的价格与更快的交付速度。你只需要提出目标，我们为你设计、搭建并持续运维。</p>
+            <ul class="muted" style="margin:12px 0 0; padding-left:18px;">
+              <li>按需客制化：根据业务规模快速调整</li>
+              <li>技术支持：7×24小时专家待命</li>
+              <li>合规友好：敏感场景提供替代方案</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>核心优势</h2>
+          <div class="kicker">为全球业务提供可靠与敏捷</div>
+        </div>
+        <div class="grid-3">
+          <div class="card"><h3>一站式服务</h3><p class="muted">选型、架构、交付、运维与优化全流程托管，降低综合成本。</p></div>
+          <div class="card"><h3>技术支持与方案</h3><p class="muted">复杂网络、跨境加速、高防策略与可观测性方案一应俱全。</p></div>
+          <div class="card"><h3>全球加速与高带宽</h3><p class="muted">CDN海量节点与大带宽出口，提升跨区域访问体验。</p></div>
+          <div class="card"><h3>超低延迟</h3><p class="muted">多区域就近接入与智能路由，为实时交互类业务优化链路。</p></div>
+          <div class="card"><h3>安全与防护</h3><p class="muted">可配置多层防御，覆盖DDoS、WAF与访问控制，支持多站点。</p></div>
+          <div class="card"><h3>灵活计费</h3><p class="muted">按量/包年多种方式，支持阶段性扩容与临时加速。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>产品目录</h2>
+          <div class="kicker">Linux/Windows VPS、网站与数据库托管</div>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Linux VPS</h3>
+            <p class="muted">提供 Ubuntu、CentOS、Debian、Fedora 等主流发行版，支持自定义镜像、Root 权限与一键重装。</p>
+            <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
+              <li>常见镜像：Ubuntu 22.04/20.04、Debian 12/11、CentOS 7/Stream</li>
+              <li>SSH 登录、IPv4/IPv6、按需快照/备份</li>
+              <li>适合网站、API、代理、自动化与容器化部署</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Windows VPS（RDP）</h3>
+            <p class="muted">预装 Windows Server（远程桌面），即可远程办公、自动化任务、桌面应用托管。</p>
+            <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
+              <li>版本：Windows Server 2019/2022</li>
+              <li>RDP 远程桌面、独立管理员权限</li>
+              <li>适合办公自动化、抓取、桌面应用运行</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>网站与数据库托管</h3>
+            <p class="muted">交付即用，按需部署 Nginx/Apache、PHP/Node.js/Java 与 MySQL/PostgreSQL/Redis 等数据库。</p>
+            <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
+              <li>网站托管：SSL、备份、监控与自动扩容建议</li>
+              <li>数据库托管：独立实例、按需扩容与读写分离</li>
+              <li>可选带宽与加速方案，保障访问体验</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="regions">
+      <div class="container">
+        <div class="section-title">
+          <h2>热门线路与地区</h2>
+          <div class="kicker">就近接入，优化延迟与带宽</div>
+        </div>
+        <div class="grid-3">
+          <div class="card"><h3>北美</h3><p class="muted">美国（西海岸/东海岸）、加拿大。适合北美与跨境业务，国际带宽充足。</p></div>
+          <div class="card"><h3>欧洲</h3><p class="muted">德国、荷兰、英国、法国。覆盖欧盟主要节点，合规友好，链路稳定。</p></div>
+          <div class="card"><h3>亚洲</h3><p class="muted">新加坡、日本、韩国、中国香港。面向泛亚与回国需求，延迟优势明显。</p></div>
+          <div class="card"><h3>大洋洲</h3><p class="muted">澳大利亚、新西兰。近源覆盖区域用户，提升区域体验。</p></div>
+          <div class="card"><h3>拉美/中东</h3><p class="muted">巴西、智利、阿联酋、沙特等。适合当地拓展与特殊合规需求。</p></div>
+          <div class="card"><h3>专线/优化</h3><p class="muted">按需提供回国优化、游戏专线、企业跨境专线与 BGP 多线。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="payments">
+      <div class="container">
+        <div class="section-title">
+          <h2>支付与合规</h2>
+          <div class="kicker">支持匿名支付 · 合规经营</div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>USDT 匿名支付</h3>
+            <p class="muted">支持 USDT（TRC20/ERC20）匿名支付与按周期续费。也可按需提供多渠道支付方案。</p>
+            <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
+              <li>开通快：到账后即开即用</li>
+              <li>更灵活：可月付/季付/年付</li>
+              <li>更私密：无需绑定实名信息</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>合规与使用规范</h3>
+            <p class="muted">我们面向企业/开发者提供基础设施服务，不支持或协助任何违法合规的用途。请在当地法律允许的范围内使用。</p>
+            <ul class="muted" style="margin:10px 0 0; padding-left:18px;">
+              <li>提供发票与基础合规指引（按地区差异）</li>
+              <li>可签订服务协议与SLA约定</li>
+              <li>违规用途将被限制，恕不另行通知</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="section-title">
+          <h2>套餐与报价</h2>
+          <div class="kicker">常用规格示例，更多配置请咨询</div>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="pill" style="margin-bottom:8px;">Linux VPS</div>
+            <h3>入门型</h3>
+            <p class="muted">1 vCPU · 1-2GB RAM · 20-40GB SSD · 1TB 流量</p>
+            <p class="muted">适合轻量网站、API、爬虫与自动化任务</p>
+            <a class="cta" href="/click" aria-label="咨询Linux入门型">获取报价</a>
+          </div>
+          <div class="card">
+            <div class="pill" style="margin-bottom:8px;">Windows VPS（RDP）</div>
+            <h3>办公增强</h3>
+            <p class="muted">2 vCPU · 4GB RAM · 60GB SSD · 2TB 流量</p>
+            <p class="muted">适合远程办公、自动化脚本、桌面应用运行</p>
+            <a class="cta" href="/click" aria-label="咨询Windows办公增强">获取报价</a>
+          </div>
+          <div class="card">
+            <div class="pill" style="margin-bottom:8px;">网站/数据库托管</div>
+            <h3>业务稳健</h3>
+            <p class="muted">Nginx/Node/PHP · MySQL/PostgreSQL · 监控与备份</p>
+            <p class="muted">按需扩容与读写分离，支持多地区部署与加速</p>
+            <a class="cta" href="/click" aria-label="咨询托管业务稳健">获取报价</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-title">
+          <h2>购买流程</h2>
+          <div class="kicker">简单三步，先试用再开通</div>
+        </div>
+        <div class="steps">
+          <div class="card step">
+            <h3>联系我们</h3>
+            <p class="muted">描述你的地区/线路、系统与用量需求，我们快速匹配。</p>
+          </div>
+          <div class="card step">
+            <h3>免费试用</h3>
+            <p class="muted">无需信用卡、无需实名认证，体验性能与网络质量。</p>
+          </div>
+          <div class="card step">
+            <h3>正式开通</h3>
+            <p class="muted">满意后使用 USDT 续费或升级配置，即开即用。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="cta-block">
+          <div>
+            <h2 style="margin:0 0 6px;">申请免费试用</h2>
+            <p class="muted" style="margin:0;">无需信用卡、无需实名认证。备注你的地区/线路、系统版本与用量需求，我们将尽快开通试用。</p>
+          </div>
+          <div>
+            <div class="card" style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+              <div>
+                <div class="muted" style="margin-bottom:8px;">点击下方按钮，通过 Telegram 与我们沟通试用需求（地区/线路、系统版本、用量等）。</div>
+                <div class="muted" style="font-size:12px;">免费试用 · 无需信用卡 · 无需实名认证</div>
+              </div>
+              <a class="cta" href="https://t.me/yourchannel" target="_blank" rel="nofollow noopener" aria-label="联系Telegram申请免费试用">联系 Telegram 申请免费试用</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:6px;"><span class="brand-badge" aria-hidden="true"></span>匿名云VPS总代理</div>
+        <div class="muted">我们致力于为你提供更安全的云服务器与高效的云端方案。欢迎随时与我们联系获取报价。</div>
+      </div>
+      <div>
+        <div style="font-weight:600; margin-bottom:6px;">快速链接</div>
+        <div class="muted"><a href="#solutions">解决方案</a> · <a href="#features">核心优势</a> · <a href="#process">购买流程</a></div>
+      </div>
+      <div>
+        <div style="font-weight:600; margin-bottom:6px;">联系我们</div>
+        <div class="muted">Telegram：<a href="/click" target="_blank" rel="nofollow noopener">@yourchannel</a></div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:18px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+      <div class="legal">© <span id="y"></span> 匿名云VPS总代理 · 保留所有权利</div>
+      <div class="muted" style="font-size:12px;">面向企业/开发者提供基础设施与加速服务，不对个人非法用途提供服务。</div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
